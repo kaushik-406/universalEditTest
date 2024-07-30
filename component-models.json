@@ -216,6 +216,13 @@
         "multi": false
       },
       {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
         "component": "select",
         "name": "type",
         "value": "h1",
