@@ -47,7 +47,13 @@
       "cards",
       "columns",
       "quote",
-      "carousel"
+      "carouselItem"
      ]
+  },
+  {
+    "id": "carouselItem",
+    "components": [
+      "carousel"
+    ]
   }
 ]
