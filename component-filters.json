@@ -49,5 +49,11 @@
       "quote",
       "carousel"
      ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carouselItem"
+    ]
   }
 ]
