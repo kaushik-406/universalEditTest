@@ -217,7 +217,7 @@
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "carouseltext",
         "value": "",
         "label": "Text",
         "valueType": "string"
