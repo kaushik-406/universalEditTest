@@ -29,7 +29,7 @@
       "cards",
       "columns",
       "fragment",
-      "Carousel"
+      "Carousels"
     ]
   },
   {
@@ -39,9 +39,9 @@
     ]
   },
   {
-    "id": "Carousel",
+    "id": "Carousels",
     "components": [
-      "carousels"
+      "carousel"
     ]
   }
 ]
