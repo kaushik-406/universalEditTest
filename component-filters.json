@@ -28,33 +28,13 @@
       "hero",
       "cards",
       "columns",
-      "carousel"
+      "fragment"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
-    ]
-  },
-  {
-    "id": "section",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "hero",
-      "cards",
-      "columns",
-      "quote",
-      "carousel"
-     ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "carouselitem"
     ]
   }
 ]
