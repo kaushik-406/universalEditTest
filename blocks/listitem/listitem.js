@@ -1,9 +1,15 @@
 export default function decorate(block) {
-    const [liWrapper] = block.children;
-    console.log(liWrapper);
-  
-    const liblock = document.createElement('li');
-    liblock.textContent = liWrapper.textContent.trim();
-    liWrapper.replaceChildren(liblock);
-  }
-  
+  const props = Array.from(block.children, (row) => row.firstElementChild);
+  const [image, text] = props;
+
+  const liblock = document.createElement('li');
+  liblock.innerHTML = image.innerHTML;
+  liblock.innerHTML += text.innerHTML;
+
+  const ulblock = document.createElement('ul');
+  ulblock.appendChild(liblock);
+  console.log(ulblock);
+
+  block.innerHTML = '';
+  block.appendChild(ulblock);
+}
