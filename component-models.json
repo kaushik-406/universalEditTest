@@ -288,6 +288,14 @@
   },
   {
     "id": "listitem",
-    "fields": []
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      }
+    ]
   }
 ]

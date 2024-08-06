@@ -697,6 +697,21 @@ function decorateBlock(block) {
     decorateButtons(block);
   }
 }
+function decorateBlocked(block) {
+  const shortBlockName = block.classList[0];
+  if (shortBlockName && !block.dataset.blockStatus) {
+    block.classList.add('block');
+    block.dataset.blockName = shortBlockName;
+    block.dataset.blockStatus = 'initialized';
+    wrapTextNodes(block);
+    const blockWrapper = block.parentElement;
+    blockWrapper.classList.add(`${shortBlockName}-wrapper`);
+    const section = block.closest('.section');
+    // if (section) section.classList.add(`${shortBlockName}-container`);
+    // eslint-disable-next-line no-use-before-define
+    decorateButtons(block);
+  }
+}
 
 /**
  * Decorates all blocks in a container element.
