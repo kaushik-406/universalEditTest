@@ -8,7 +8,7 @@ export default function decorate(block) {
   
     const ulblock = document.createElement('ul');
     ulblock.appendChild(liblock);
-    console.log(ulblock);
+    // console.log(ulblock);
   
     block.innerHTML = '';
     block.appendChild(ulblock);
