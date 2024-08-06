@@ -52,5 +52,11 @@
     "components": [
       "accordion"
     ]
+  },
+  {
+    "id": "unorderedlist",
+    "components": [
+      "listitem"
+    ]
   }
 ]
