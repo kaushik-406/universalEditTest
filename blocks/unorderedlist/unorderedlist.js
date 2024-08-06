@@ -3,7 +3,7 @@ export default function decorate(block) {
     // const [image, text] = props;
   
     const ulblock = document.createElement('ul');
-    ulblock.appendChild(liblock);
+    // ulblock.appendChild(liblock);
     // console.log(ulblock);
   
     block.innerHTML = '';
