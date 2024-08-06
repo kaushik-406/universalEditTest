@@ -409,37 +409,6 @@ function wrapTextNodes(block) {
     el.append(wrapper);
   };
 
-  const wrapDiv = (el) => {
-    const wrapper = document.createElement('div');
-    wrapper.append(...el.childNodes);
-  
-    [...el.attributes]
-      .filter(({ nodeName }) => nodeName === 'class'
-        || nodeName.startsWith('data-aue')
-        || nodeName.startsWith('data-richtext'))
-      .forEach(({ nodeName, nodeValue }) => {
-        wrapper.setAttribute(nodeName, nodeValue);
-        el.removeAttribute(nodeName);
-      });
-  
-    el.append(wrapper);
-  };
-
-  block.querySelectorAll(':scope > div > div').forEach((blockColumn) => {
-    if (blockColumn.hasChildNodes()) {
-      const hasWrapper = !!blockColumn.firstElementChild
-        && validWrappers.some((tagName) => blockColumn.firstElementChild.tagName === tagName);
-      if (!hasWrapper) {
-        wrapDiv(blockColumn);
-      } else if (
-        blockColumn.firstElementChild.tagName === 'PICTURE'
-        && (blockColumn.children.length > 1 || !!blockColumn.textContent.trim())
-      ) {
-        wrapDiv(blockColumn);
-      }
-    }
-  });
-
   block.querySelectorAll(':scope > div > div').forEach((blockColumn) => {
     if (blockColumn.hasChildNodes()) {
       const hasWrapper = !!blockColumn.firstElementChild
@@ -716,7 +685,7 @@ async function loadBlocks(main) {
 function decorateBlock(block) {
   const shortBlockName = block.classList[0];
   if (shortBlockName && !block.dataset.blockStatus) {
-    block.classList.add('prashant');
+    block.classList.add('block');
     block.dataset.blockName = shortBlockName;
     block.dataset.blockStatus = 'initialized';
     wrapTextNodes(block);
