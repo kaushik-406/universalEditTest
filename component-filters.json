@@ -32,7 +32,7 @@
       "Carousel",
       "accordion-group",
       "quote",
-      "unorderedlist"
+      "unorderedlists"
     ]
   },
   {
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "id": "unorderedlist",
+    "id": "unorderedlists",
     "components": [
       "listitem"
     ]
