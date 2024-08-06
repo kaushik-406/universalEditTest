@@ -1,6 +1,6 @@
 export default function decorate(block) {
     const [quoteWrapper] = block.children;
-    console.log(quoteWrapper);
+    console.log(block);
   
     const blockquote = document.createElement('blockquote');
     blockquote.textContent = quoteWrapper.textContent.trim();
