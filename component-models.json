@@ -292,7 +292,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference",
+        "name": "liImage",
         "label": "Image",
         "multi": false
       }
