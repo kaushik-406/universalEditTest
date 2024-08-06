@@ -40,9 +40,9 @@
     ]
   },
   {
-    "id": "Carousels",
+    "id": "Carousel",
     "components": [
-      "carousel"
+      "carousel-item"
     ]
   },
   {
