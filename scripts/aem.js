@@ -716,7 +716,7 @@ async function loadBlocks(main) {
 function decorateBlock(block) {
   const shortBlockName = block.classList[0];
   if (shortBlockName && !block.dataset.blockStatus) {
-    block.classList.add('block');
+    block.classList.add('prashant');
     block.dataset.blockName = shortBlockName;
     block.dataset.blockStatus = 'initialized';
     wrapTextNodes(block);
