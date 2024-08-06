@@ -1,7 +1,3 @@
-// export default function decorate(block) {
-//     const ulblock = document.createElement('ul');
-// }
-
 export default function decorate(block) {
     const props = Array.from(block.children, (row) => row.firstElementChild);
     // const [image, text] = props;
