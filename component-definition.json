@@ -240,7 +240,7 @@
           }
         },
         {
-          "title": "Li",
+          "title": "listitem",
           "id": "listitem",
           "plugins": {
             "xwalk": {
