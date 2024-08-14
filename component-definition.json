@@ -268,6 +268,18 @@
               }
             }
           }
+        },
+        {
+          "title": "Image",
+          "id": "image-kaushik",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/image/v1/image",
+                "template": {}
+              }
+            }
+          }
         }
       ]
     }
