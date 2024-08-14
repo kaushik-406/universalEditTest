@@ -327,6 +327,22 @@
         "label": "Alt Text"
       }
     ]
+  },
+  {
+    "id": "tab",
+    "fields": []
+  },
+  {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tabtitle",
+        "value": "",
+        "label": "TabsText"
+      }
+    ]
   }
 
 ]

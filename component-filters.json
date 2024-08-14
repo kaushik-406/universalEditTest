@@ -59,5 +59,11 @@
     "components": [
       "listitem"
     ]
+  },
+  {
+    "id": "tab",
+    "components": [
+      "tabs"
+    ]
   }
 ]
