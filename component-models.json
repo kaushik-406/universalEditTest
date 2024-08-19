@@ -336,9 +336,9 @@
         "valueType": "string",
         "name": "tabtitle",
         "value": "",
-        "label": "TabsText"
+        "label": "TabsText",
+        "multi": true
       }
     ]
   }
-
 ]
